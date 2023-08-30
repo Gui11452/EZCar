@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/fontawesome.min.css" integrity="sha512-cHxvm20nkjOUySu7jdwiUxgGy11vuVPE9YeK89geLMLMMEOcKFyS2i+8wo0FOwyQO/bL8Bvq1KMsqK4bbOsPnA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/brands.min.css" integrity="sha512-L+sMmtHht2t5phORf0xXFdTC0rSlML1XcraLTrABli/0MMMylsJi3XA23ReVQkZ7jLkOEIMicWGItyK4CAt2Xw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/solid.min.css" integrity="sha512-bdTSJB23zykBjGDvyuZUrLhHD0Rfre0jxTd0/jpTbV7sZL8DCth/88aHX0bq2RV8HK3zx5Qj6r2rRU/Otsjk+g==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href='css/index.css'>
+    <link rel="stylesheet" href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css">
+    <link rel="icon" href='images/favicon_ezcar.jpeg'>
+    <title> EZCar </title>
+</head>
+<body>
+    
+    <a id="robbu-whatsapp-button" target="_blank" href="https://api.whatsapp.com/send?phone=5511999999999&text=Ol%C3%A1,%20tudo%20bem?">
+        <div class="rwb-tooltip">Fale Conosco</div>
+        <img src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg">
+    </a>
+
+    <div class="cookies">
+        <p>
+            Este site usa cookies para melhorar a sua experiência em nossa plataforma.
+            Ao navegar pelo site, declaro que estou ciente dos termos deste
+            <a href="">
+                Aviso de Privacidade
+            </a>
+        </p>
+        <span>
+            Aceito
+        </span>
+    </div>
+
+    <div class="popup">
+        <p>
+            Atenção! Não enviamos mensagens ou ligamos solicitando dados pessoais, 
+            códigos ou qualquer pagamento. Tudo é feito através do próprio app EZCar.
+        </p>
+        <div>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+<header class="cabecalho-invisivel"></header>
+
+<header class="cabecalho">
+    <div>
+        <a href="{% url 'home' %}">
+            <img src='images/logo_ezcar.jpeg' alt="EZCAR">
+        </a>
+        <nav>
+            <a href=".produto">
+                Como Funciona
+                <span></span>
+            </a>
+            <a href=".container-diferenciais-e-beneficios">
+                Diferenciais
+                <span></span>
+            </a>
+            <div class="dropdown">
+                <p>Parceiros</p>
+                <div href=".terceira_visao_3v"> 
+                    <a href=".terceira_visao_3v">
+                        <p href=".terceira_visao_3v">
+                            <i class="fa-solid fa-square" href=".terceira_visao_3v"></i>
+                            3V Terceira Visão
+                        </p>
+                        <!-- <span></span> -->
+                    </a>
+                </div>
+            </div>
+            <a href=".container-duvidas">
+                Perguntas Frequentes
+                <span></span>
+            </a>
+            <a href=".container-blog">
+                Blog
+                <span></span>
+            </a>
+            <!-- <a href="carreiras/index.html">
+                Trabalhe Conosco
+                <span></span>
+            </a> -->
+        </nav>
+    </div>
+</header>
+
+<header class="cabecalho-mobile">
+    <div>
+        <a href="{% url 'home' %}">
+            <img src='images/logo_ezcar.jpeg' alt="EZCAR">
+        </a>
+        <div class="botao-mobile">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</header>
+
+<header class="cabecalho-oculto">
+    <div class="botao-oculto">
+        <span></span>
+        <span></span>
+    </div>
+    <a href="{% url 'home' %}">
+        <img src='images/logo_ezcar.jpeg' alt="EZCAR">
+    </a>
+    <nav>
+        <a href=".produto">
+            Como Funciona
+            <span></span>
+        </a>
+        <a href=".container-diferenciais-e-beneficios">
+            Diferenciais
+            <span></span>
+        </a>
+        <div class="dropdown">
+            <p>Parceiros</p>
+            <div href=".terceira_visao_3v"> 
+                <a href=".terceira_visao_3v">
+                    <p href=".terceira_visao_3v">
+                        <i class="fa-solid fa-square" href=".terceira_visao_3v"></i>
+                        3V Terceira Visão
+                    </p>
+                    <!-- <span></span> -->
+                </a>
+            </div>
+        </div>
+        <a href=".container-duvidas">
+            Perguntas Frequentes
+            <span></span>
+        </a>
+        <a href=".container-blog">
+            Blog
+            <span></span>
+        </a>
+    </nav>
+</header>
+
+    <div class="container-home">
+        <div>
+            <div class="home">
+                <h1>
+                    Compra e <br>
+                    Venda de <br>
+                    Veículos Online <br>
+                </h1>
+                <p>
+                    Em busca de comprar ou vender um veículo
+                    seminovo ou usado, verificado e vistoriado,
+                    com transparência e sem intermediários
+                    caros? Conheça o EZCar, um app inovador
+                    que veio para revolucionar o mercado,
+                    possibilitando preço justo e negociações
+                    seguras
+                </p>
+                <strong>
+                    Bom para quem compra
+                </strong>
+                <strong>
+                    Bom para quem vende.
+                </strong>
+            </div>
+            <img src='images/ezcar_home.png' alt="">
+        </div>
+    </div>
+
+    <div class="container-motivos">
+        <div>
+            <h2>
+                Motivos para <span>fazer negócio pelo EZCar:</span>
+            </h2>
+            <div class="motivos">
+                <p>
+                    <i class="fa-solid fa-check"></i>
+                    Anúncio Grátis,
+                    <span>ou Impulsionado com destaque nas pesquisas e laudo da vistoria disponível no anúncio.</span>
+                </p>
+                <p>
+                    <i class="fa-solid fa-check"></i>
+                    Segurança:
+                    <span>100% dos usuários identificados, ninguém é desconhecido, e sem contato pessoal e físico entre
+                        Vendedor e Comprador.</span>
+                </p>
+                <p>
+                    <i class="fa-solid fa-check"></i>
+                    Procedência:
+                    <span> 100% dos veículos verificados (placa e chassis), e vistoriados (Vistoria Cautelar) antes da conclusão da
+                        compra!</span>
+                </p>
+                <p>
+                    <i class="fa-solid fa-check"></i>
+                    Preço Justo:
+                    <span> Sem propostas indecentes para os vendedores. Sem preços abusivos para os compradores. Receba e
+                        pague o melhor preço com a venda direta, entre particulares, e sem intermediários. E, com segurança!</span>
+                </p>
+                <p>
+                    <i class="fa-solid fa-check"></i>
+                    Transparência:
+                    <span> Acompanhe, em tempo real, diretamente no App, as propostas de compra e o status das mesmas. </span>
+                </p>
+                <p>
+                    <i class="fa-solid fa-check"></i>
+                    Tranquilidade:
+                    <span> Se solicitado, buscamos financiamento com as principais financeiras e você escolhe a opção que
+                        mais lhe convém. </span>
+                </p>
+                <p>
+                    <i class="fa-solid fa-check"></i>
+                    Pagamento Garantido, Seguro e Rápido:
+                    <span> Todos os pagamentos são mantidos na Conta Segura EZCar e o
+                        pagamento ao vendedor somente é liberado após a entrega do documento de transferência devidamente
+                        preenchido e assinado conforme as exigências legais! E o veículo somente é liberado para o comprador após a
+                        quitação do negócio. </span>
+                </p>
+            </div>
+            <div class="motivos-imagens">
+                <img src='images/baixe_ezcar.png' alt="">
+                <img src='images/google_play.png' alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="ezcar produto">
+        <!-- <h2>
+            EZCAR
+        </h2> -->
+        <div class="produto-imagem-desktop">
+            <img src='images/ezcar_desktop.png'>
+        </div>
+        <div class="produto-imagem-mobile">
+            <img src='images/ezcar_mobile.png'>
+        </div>
+        <div class="produto-imagem-quadrada">
+            <img src='images/ezcar_quadrado.png'>
+        </div>
+        <!-- <h2>
+            *Antes de firmar o contrato de compra e venda.
+        </h2> -->
+    </div>
+
+    <div class="container-video video1">
+        <h2>
+            Receba <span>propostas reais pelo seu veículo:</span>
+        </h2>
+        <div class="video">
+            <iframe src="https://www.youtube.com/embed/QJ6j77GjdFQ?si=2rqAEK2Gg3L4VN0o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="imagens-video">
+                <div>
+                    <img src='images/som.png' alt="">
+                    <p>
+                        Anuncie grátis, <br>
+                        sem compromisso
+                    </p>
+                </div>
+                <span></span>
+                <div>
+                    <img src='images/pessoas.png' alt="">
+                    <p>
+                        Transparência <br>
+                        total
+                    </p>
+                </div>
+                <span></span>
+                <div>
+                    <img src='images/like.png' alt="">
+                    <p>
+                        Faça uma <br>
+                        avaliação
+                    </p>
+                </div>
+                <span></span>
+                <div>
+                    <img src='images/cartao.png' alt="">
+                    <p>
+                        Pagamento sem <br>
+                        burocracia
+                    </p>
+                </div>
+            </div>
+            <div class="motivos-imagens">
+                <img src='images/baixe_ezcar.png' alt="">
+                <img src='images/google_play.png' alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-topicos">
+        <div>
+            <h2>
+                Receba <span>propostas reais pelo seu veículo:</span>
+            </h2>
+            <div class="topicos">
+                <div>
+                    <h2>
+                        1. Anuncie grátis, <br>
+                        sem <br>
+                        compromisso <br>
+                    </h2>
+                    <p>
+                        Anuncie gratuitamente,
+                        ou, se preferir,
+                        impulsione o anúncio
+                        para dar maior destaque
+                        e preferência nos
+                        resultados das buscas.
+                    </p>
+                </div>
+
+                <div>
+                    <h2>
+                        2. Transparência: <br>
+                        acompanhe as <br>
+                        propostas <br>
+                    </h2>
+                    <p>
+                        Acompanhe, diretamente
+                        no App, as propostas feitas
+                        por potenciais
+                        compradores interessados
+                        no seu veículo. 
+                    </p>
+                    <p>
+                        Aceite ou recuse as
+                        propostas, conforme a sua
+                        conveniência.
+                    </p>
+                    <p>
+                        Ou seja, você não é
+                        obrigado a vender seu
+                        veículo por qualquer
+                        preço.
+                    </p>
+                </div>
+
+                <div>
+                    <h2>
+                        3. Vistoria
+                    </h2>
+                    <p>
+                        Após um comprador
+                        confirmar o interesse,
+                        leve seu veículo para ser
+                        visitado, e vistoriado,
+                        caso o interessado firme
+                        a compra.
+                    </p>
+                </div>
+
+                <div>
+                    <h2>
+                        4. Pagamento
+                    </h2>
+                    <p>
+                        Receba o valor líquido da
+                        venda de seu veículo
+                        diretamente em sua
+                        conta, em até 2 dias
+                        úteis. 
+                    </p>
+                </div>
+            </div>
+            <div class="motivos-imagens">
+                <img src='images/baixe_ezcar.png' alt="">
+                <img src='images/google_play.png' alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-video video2">
+        <h2>
+            Encontre <span>veículos verificados e vistoriados:</span>
+        </h2>
+        <div class="video">
+            <iframe src="https://www.youtube.com/embed/QJ6j77GjdFQ?si=2rqAEK2Gg3L4VN0o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="imagens-video">
+                <div>
+                    <img src='images/som.png' alt="">
+                    <p>
+                        Pesquise ou <br>
+                        crie filtro
+                    </p>
+                </div>
+                <span></span>
+                <div>
+                    <img src='images/pessoas.png' alt="">
+                    <p>
+                        Faça uma <br>
+                        proposta
+                    </p>
+                </div>
+                <span></span>
+                <div>
+                    <img src='images/like.png' alt="">
+                    <p>
+                        Proposta <br>
+                        aceita?
+                    </p>
+                </div>
+                <span></span>
+                <div>
+                    <img src='images/cartao.png' alt="">
+                    <p style="text-align: center;">
+                        Garantia <br>
+                        "Desista <br>
+                        sem perguntas"
+                    </p>
+                </div>
+            </div>
+            <div class="motivos-imagens">
+                <img src='images/baixe_ezcar.png' alt="">
+                <img src='images/google_play.png' alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-topicos">
+        <div>
+            <h2>
+                Encontre <span>veículos verificados e vistoriados:</span>
+            </h2>
+            <div class="topicos">
+                <div>
+                    <h2>
+                        1. Faça uma busca
+                    </h2>
+                    <p>
+                        Faça uma busca para
+                        encontrar anúncios do
+                        veículo que deseja, ou
+                        crie um filtro para ser
+                        informado quando
+                        aparecer um anúncio do
+                        veículo de seu interesse.
+                    </p>
+                </div>
+
+                <div>
+                    <h2>
+                        2. Faça e acompanhe <br>
+                        sua proposta
+                    </h2>
+                    <p>
+                        Encontrou o veículo que
+                        está procurando? Faça uma
+                        proposta, e acompanhe,
+                        diretamente no App, o
+                        status de sua proposta e do
+                        veículo, por meio de um
+                        Chat integrado. 
+                    </p>
+                </div>
+
+                <div>
+                    <h2>
+                        3. Verifique <br>
+                        pessoalmente <br>
+                        o veículo <br>
+                    </h2>
+                    <p>
+                        Se o vendedor aceitar,
+                        você poderá visitar o
+                        veículo e verificar
+                        pessoalmente as
+                        condições do mesmo.
+                        Todos os veículos são
+                        vistoriados antes da
+                        conclusão do negócio.
+                    </p>
+                </div>
+
+                <div>
+                    <h2>
+                        4. Desista sem <br>
+                        perguntas
+                    </h2>
+                    <p>
+                        Desista a qualquer
+                        momento, antes de
+                        firmar o contrato de
+                        compra e venda.
+                    </p>
+                    <p>
+                        Após firmar a compra, o
+                        comprador pode desistir,
+                        caso seja verificado um
+                        vício no veículo, sua
+                        documentação ou seu
+                        anúncio. 
+                    </p>
+                </div>
+            </div>
+            <div class="motivos-imagens">
+                <img src='images/baixe_ezcar.png' alt="">
+                <img src='images/google_play.png' alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-diferenciais-e-beneficios">
+        <div>
+            <h2>
+                DIFERENCIAIS E BENEFÍCIOS
+            </h2>
+            <div class="diferenciais-beneficios">
+                <div>
+                    <h3>
+                        1. Compre ou Venda com Preço justo
+                    </h3>
+                    <p>
+                        <i class="fa-solid fa-check"></i>
+                        Não trabalhamos com lojistas ou quaisquer intermediários. 
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-check"></i>
+                        Sem propostas indecentes para os vendedores.
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-check"></i>
+                        Sem preços abusivos para os compradores.
+                    </p>
+                </div>
+
+                <div>
+                    <h3>
+                        2. Procedência
+                    </h3>
+                    <p>
+                        <i class="fa-solid fa-check"></i>
+                        Os vendedores são os proprietários dos veículos anunciados.
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-check"></i>
+                        Se o vendedor aceitar sua proposta, você poderá verificar 
+                        pessoalmente as condições do veículo. 
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-check"></i>
+                        Todos os veículos passam por vistoria cautelar de empresa 
+                        de renome do ramo antes da conclusão do negócio.
+                    </p>
+                </div>
+
+                <div>
+                    <h3>
+                        3. segurança
+                    </h3>
+                    <p>
+                        <i class="fa-solid fa-check"></i>
+                        Todos os usuários são previamente identificados pelo EZCar.
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-check"></i>
+                        Não há contato direto físico entre vendedor e comprador.
+                    </p>
+                </div>
+
+                <div>
+                    <h3>
+                        4. Desista sem perguntas
+                    </h3>
+                    <p>
+                        <i class="fa-solid fa-check"></i>
+                        Antes de firmar o contrato de compra e venda.
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-check"></i>
+                        Após firmar a compra, o comprador pode desistir, caso seja
+                        verificado um vício no veículo, sua documentação ou
+                        anúncio.
+                    </p>
+                </div>
+
+                <div>
+                    <h3>
+                        3. Pagamento seguro e rápido
+                    </h3>
+                    <p>
+                        <i class="fa-solid fa-check"></i>
+                        O pagamento é liberado para o vendedor somente após a
+                        entrega do documento de transferência devidamente
+                        preenchido e assinado conforme as exigências legais. 
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-check"></i>
+                        O veículo somente é liberado para o comprador retirar após
+                        a quitação do negócio.
+                    </p>
+                </div>
+
+                <div class="motivos-imagens">
+                    <img src='images/baixe_ezcar.png' alt="">
+                    <img src='images/google_play.png' alt="">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-parceiros terceira_visao_3v">
+        <div>
+            <h2>
+                Parceiros
+            </h2>
+            <div class="parceiros">
+                <div>
+                    <img src='images/3v_terceira_visao.png' alt="">
+                    <div>
+                        <h3>
+                            Números que impressionam
+                        </h3>
+                        <div>
+                            <span>
+                                <h4>
+                                    650.000
+                                </h4>
+                                <p>
+                                    Atendimentos por Ano
+                                </p>
+                            </span>
+                            <span>
+                                <h4>
+                                    11+
+                                </h4>
+                                <p>
+                                    Estado
+                                </p>
+                            </span>
+                            <span>
+                                <h4>
+                                    200+
+                                </h4>
+                                <p>
+                                    Áreas alcançadas no Brasil
+                                </p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div>   
+                    <h3>
+                        Perícia Cautelar
+                    </h3>
+                    <p>
+                        Trata-se de um importante serviço 
+                        para quem está comprando ou vendendo um veículo
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-check"></i>
+                        Verificação de gravação do chassi
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-check"></i>
+                        Numeração do motor
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-check"></i>
+                        Numeração de câmbio
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-check"></i>
+                        Placa e Lacre da Placa
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-check"></i>
+                        Itens de segurança
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-check"></i>
+                        Avaliação estrutural
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-check"></i>
+                        Perícia minuciosa em todo veículo
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-check"></i>
+                        Garantia de originalidade
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-check"></i>
+                        Laudo completo de avaliação
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-check"></i>
+                        Consulta de histórico de veículo
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-check"></i>
+                        Verificação de documentos
+                    </p>
+                </div>
+            </div>
+            <h2>
+                Todos os veículos anunciados no EZCar são vistoriados antes da conclusão da compra e venda!
+            </h2>
+        </div>
+    </div>
+
+    <div class="container-baixar-app">
+        <div>
+            <div class="baixar-app">
+                <div>
+                    <h2>
+                        Baixe o app EZCar
+                    </h2>
+                    <p>
+                        Além de poder anunciar, pesquisar e
+                        fazer propostas, você poderá
+                        acompanhar todo o processo de venda
+                        ou compra de seu veículo, tudo
+                        diretamente no App.
+                    </p>
+                    <img src='images/google_play.png' alt="">
+                </div>
+                <img src='images/ezcar_home.png' alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-duvidas">
+        <div>
+            <h2>
+                Mais alguma <span>dúvida sobre o EZCar</span>?
+            </h2>
+            <div class="duvidas">
+                <div>
+                    <div class="duvida">
+                        <h3>
+                            1. 0 que é e Por que vender com o ezcar?
+                        </h3>
+                        <p>
+                            <i class="fa-solid fa-forward"></i>
+                            O EZCar é um inovador aplicativo que aproxima vendedores
+                            e compradores, pessoas físicas, interessados em vender e
+                            comprar veículos seminovos ou usados, com transparência
+                            e da forma mais segura possível, sem intermediários, para
+                            garantir preço justo e benefícios para todas as partes. 
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-forward"></i>
+                            Não somos, nem trabalhamos com lojistas ou
+                            intermediários. 
+                        </p>
+                    </div>
+
+                    <div class="duvida">
+                        <h3>
+                            2. Tenho interesse em vender meu
+                            veículo. Que veículos posso
+                            anunciar?
+                        </h3>
+                        <p>
+                            <i class="fa-solid fa-forward"></i>
+                            Você pode anunciar qualquer veículo automotor terrestre
+                            nas seguintes condições e estado:
+                        </p>
+                        <p>
+                            a) Com CRLV com vencimento em prazo superior a 20 dias;
+                        </p>
+                        <p>
+                            b) Com CRV em papel moeda, se exigido pelo DETRAN;
+                        </p>
+                        <p>
+                            c) Com Dívidas, na soma de multas, débitos a pagar e saldo
+                            devedor de financiamento anterior, menor do que 85%
+                            do preço de venda;
+                        </p>
+                        <p>
+                            d) Com data de fabricação inferior a 15 anos;
+                        </p>
+                        <p>
+                            e) Veículo próprio, pertencente a pessoa física;
+                        </p>
+                        <p>
+                            f) Fruto de leilão, desde que se mencione este fato no anúncio;
+                        </p>
+                        <p>
+                            g) Com colisões, riscos, amassamentos, falha estrutural,
+                            corrosão, avarias mecânicas relevantes ou mau cheiro,
+                            desde que se mencione essas condições no anúncio;
+                        </p>
+                        <p>
+                            h) Que NÃO seja fruto de furto ou roubo;
+                        </p>
+                        <p>
+                            i) SEM ordem de apreensão;
+                        </p>
+                        <p>
+                            j) SEM qualquer vício que cause a reprovação do Laudo de
+                            Transferência (ECV) do veículo e impeça a sua
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="duvida">
+                        <h3>
+                            3. Pago alguma coisa para anunciar pelo ezcar?
+                        </h3>
+                        <p>
+                            <i class="fa-solid fa-forward"></i>
+                            Não há cobrança por apenas anunciar seu veículo. 
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-forward"></i>
+                            Você pode optar por pagar para impulsionar seu anúncio, e
+                            neste caso, terá direito a destaque do anúncio no App,
+                            prioridade nos resultados das pesquisas feitas pelos
+                            compradores, realização de vistoria cautelar atualizada,
+                            inclusão do laudo de vistoria no anúncio, e exposição do seu
+                            veículo no pátio EZCar Center por até 30 dias, para visita dos
+                            interessados, aumentando a probabilidade e velocidade de
+                            venda do seu veículo.
+                        </p>
+                    </div>
+    
+                    <div class="duvida">
+                        <h3>
+                            4. anunciei. Tenho que aceitar uma proposta?
+                        </h3>
+                        <p>
+                            <i class="fa-solid fa-forward"></i>
+                            Você, vendedor anunciante, poderá receber mais de uma
+                            proposta por seu veículo, mas nosso serviço não consiste de
+                            leilão e você não é obrigado a aceitar qualquer proposta. 
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-forward"></i>
+                            Se você achar que as propostas estão baixas, basta não aceitar nenhuma. 
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-forward"></i>
+                            Mas cuidado também para não recusar tudo que é
+                            proposta, ou aceitar apenas propostas muito altas ou
+                            irrealistas, pois isso pode impedir você de vender mais
+                            rápido ou até mesmo de vender seu veículo por um preço
+                            justo, visto que quem faz proposta também não é obrigado
+                            a comprar seu veículo, e pode apenas estar tumultuando o
+                            processo.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-duvidas">
+        <div>
+            <h2>
+                Mais alguma <span>dúvida sobre o EZCar</span>?
+            </h2>
+            <div class="duvidas">
+                <div>
+                    <div class="duvida">
+                        <h3>
+                            5. Pago alguma coisa para vender pelo ezcar?
+                        </h3>
+                        <p>
+                            <i class="fa-solid fa-forward"></i>
+                            Nossa remuneração consiste na licença de uso do App
+                            EZCar e de um valor pelo serviço de cobrança, recebimento
+                            e pagamento, que são descontados do valor do negócio
+                            efetivamente fechado.
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-forward"></i>
+                            Lembre-se: nada é de graça. Se dizem que não tem custo,
+                        </p>
+                    </div>
+
+                    <div class="duvida">
+                        <h3>
+                            6. Fiz uma proposta de compra. Posso desistir?
+                        </h3>
+                        <p>
+                            <i class="fa-solid fa-forward"></i>
+                            Sim, você pode desistir a qualquer momento, sem qualquer
+                            burocracia, desde que o faça antes de firmar o Contrato de
+                            Compra e Venda.
+                        </p>
+                    </div>
+
+                    <div class="duvida">
+                        <h3>
+                            7. Como O EZCar mostra os veículos para os interessados?
+                        </h3>
+                        <p>
+                            <i class="fa-solid fa-forward"></i>
+                            Primeiro, por meio de um sistema inteligente de busca,
+                            conectando vendedores e potenciais compradores.
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-forward"></i>
+                            Segundo, após aceitar uma proposta, o vendedor deverá
+                            levar seu veículo para um pátio EZCar Center, onde os
+                            interessados poderão visitar e avaliar pessoalmente, antes
+                            de firmar a compra.
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="duvida">
+                        <h3>
+                            8. Tenho interesse em comprar um
+                            veículo. Que informações terei sobre
+                            os veículos anunciados?
+                        </h3>
+                        <p>
+                            <i class="fa-solid fa-forward"></i>
+                            Todos os veículos anunciados, antes da conclusão da
+                            compra, passam por uma vistoria cautelar detalhada, a ser
+                            realizada por uma empresa de renome do ramo, que inclui,
+                            entre outras coisas, o levantamento de restrições e
+                            pendências, disponíveis e conhecidas, para que você tenha
+                            o máximo de informações a respeito do veículo e possa fazer
+                            a proposta mais adequada possível. Não avaliamos o estado
+                            e condições do motor e câmbio, mas você poderá levar seu
+                            mecânico de confiança para lhe auxiliar.
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-forward"></i>
+                            Lembre-se de que você tem a garantia “Desista SEM
+                            Perguntas”, ou seja, você pode desistir da compra e receber
+                            seu sinal de volta, desde que o faça antes de assinar o
+                            Contrato de Compra e Venda, ou caso seja verificado um
+                            vício no veículo, sua documentação ou seu anúncio. 
+                        </p>
+                    </div>
+    
+                    <div class="duvida">
+                        <h3>
+                            9. O EZCar é uma loja
+                        </h3>
+                        <p>
+                            <i class="fa-solid fa-forward"></i>
+                            Não. O EZCar é uma aplicativo móvel que permite que
+                            vendedores anunciem seus veículos e compradores façam
+                            propostas pelos veículos anunciados, e faz a moderação de
+                            toda a negociação entre as partes até a conclusão do
+                            negócio. 
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-duvidas">
+        <div>
+            <h2>
+                Mais alguma <span>dúvida sobre o EZCar</span>?
+            </h2>
+            <div class="duvidas">
+                <div>
+                    <div class="duvida">
+                        <h3>
+                            10. Posso financiar o veículo?
+                        </h3>
+                        <p>
+                            <i class="fa-solid fa-forward"></i>
+                            Sim. Comprar um veículo pode requerer um valor
+                            significativo, de modo que temos acesso a financeiras para
+                            fazer uma análise de crédito e, se aprovado, conceder
+                            financiamento para você.
+                        </p>
+                    </div>
+
+                    <div class="duvida">
+                        <h3>
+                            11. Posso vender diretamente para um particular?
+                        </h3>
+                        <p>
+                            <i class="fa-solid fa-forward"></i>
+                            Sim, embora nem sempre seja seguro negociar diretamente com um terceiro. 
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-forward"></i>
+                            No entanto, caso a proposta tenha sido recebida e aceita
+                            por meio do App EZCar, e após firmar o Contrato de
+                            Compra e Venda, a negociação deverá ser concluída
+                            através do EZCar, sob pena da parte desistente incorrer no
+                            pagamento da licença de uso do software EZCar,
+                            conforme indicado no documento Termos e Condições
+                            Gerais de Uso – EZCar, que deve ser lido e aceito antes de
+                            se acessar e usar o App EZCar.
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="duvida">
+                        <h3>
+                            12. Posso anunciar em outras plataformas?
+                        </h3>
+                        <p>
+                            <i class="fa-solid fa-forward"></i>
+                            Sim, não existe qualquer exclusividade. Porém, ao aceitar
+                            uma proposta recebida pelo App EZCar, e firmar a venda,
+                            ou seja, assinar o Contrato de Compra e Venda, a
+                            desistência da venda implicará no pagamento da licença
+                            de uso do software EZCar, conforme indicado no
+                            documento Termos e Condições Gerais de Uso – EZCar,
+                            que deve ser lido e aceito antes de se acessar e usar o App
+                            EZCar
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-blog">
+        <div>
+            <div>
+                <div class="post">
+                    <h2>
+                        Veja os 5 modelos que menos
+                        se desvalorizam no mercado
+                    </h2>
+                    <small>
+                        by EZCAR | Janeiro 7, 2022 | Carros | 0 Comments
+                    </small>
+                    <p>
+                        Chevrolet Onix, a sua primeira geração surgiu em 2012. Sete anos depois, foi a vez do lançamento
+                        da segunda. E deixou o veículo ainda mais alinhado a outros modelos da marca. Dentre seus atributos, 
+                        vale a pena destacar o bom consumo de combustível e os valores gastos com...
+                    </p>
+                    <a href="">
+                        Leia mais
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-cadastro">
+        <div>
+            <div>
+                <div class="cadastro">
+                    <div class="cadastro-coluna">
+                        <h2>
+                            CADASTRE-SE <br>
+                            AQUI
+                        </h2>
+                        <form action="" method="">
+                            <input type="text" name="nome" placeholder="Nome">
+                            <select name="cidade" id="">
+                                <option selected disabled>
+                                    Cidade
+                                </option>
+                                <option value="SP">
+                                    Sao Paulo
+                                </option>
+                            </select>
+                            <div>
+                                <input type="email" name="email" placeholder="E-mail">
+                                <input type="text" name="whatsapp" placeholder="Whatsapp">
+                            </div>
+                            <a href="">
+                                Cadastrar
+                            </a>
+                        </form>
+                    </div>
+                    <div class="cadastro-coluna">
+                        <h2>
+                            NOVIDADES <br>
+                            CONTEÚDO NOVO <br>
+                            OFERTAS EXCLUSIVAS
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-rodape">
+        <div>
+            <div class="rodape">
+                <a href="{% url 'home' %}">
+                    <img src='images/logo_ezcar.jpeg' alt="EZCAR">
+                </a>
+                <div>
+                    <p>
+                        O EZCar consiste em uma plataforma online que aproxima
+                        vendedores e compradores, pessoas físicas, por meio de
+                        um processo tecnológico inovador, automatizado e seguro,
+                        assistido por parceiros de negócios, para a compra e venda
+                        de veículos seminovos ou usados, verificados e vistoriados,
+                        sem intermediários, e com total transparência e segurança,
+                        sem contato entre as partes. 
+                    </p>
+                    <ul>
+                        <li>
+                            <a href=".container-motivos">
+                                Por que o EZCar?
+                            </a>
+                        </li>
+                        <li>
+                            <a href=".video1">
+                                Quero Vender
+                            </a>
+                        </li>
+                        <li>
+                            <a href=".video2">
+                                Quero Comprar
+                            </a>
+                        </li>
+                        <li>
+                            <a href=".container-duvidas">
+                                Perguntas Frequentes
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li>
+                            <a href="">
+                                Seja um EZCar Center?
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Seja um Afiliado
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://ijavendi.com.br/carreiras/">
+                                Trabalhe Conosco
+                            </a>
+                        </li>
+                        <li style="max-width: 25rem;">
+                            <a href="">
+                                Cadastre-se para receber
+                                conteúdos, novidades ou
+                                ofertas
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="https://ijavendi.com.br/">
+                                Quem Somos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Termos e Condições de Uso
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Política de Privacidade
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <strong>
+                    Bom para quem compra
+                </strong>
+                <strong>
+                    Bom para quem vende.
+                </strong>
+            </div>
+            <div class="rodape-imagens">
+                <a href="">
+                    <img src='images/facebook.png' alt="">
+                </a>
+                <a href="">
+                    <img src='images/instagram.png' alt="">
+                </a>
+                <a href="">
+                    <img src='images/google_play.png' alt="">
+                </a>
+                <img src='images/letsencrypt.png' alt="">
+            </div>
+            <div class="rodape-copyright">
+                <div>
+                    <p>
+                        Copyright © 2023 IJAVENDI. Todos os direitos reservados.
+                    </p>
+                    <p>
+                        Desenvolvido por <a href="ggaprogramer.com.br"> ggaprogramer.com.br </a>
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        IJAVENDI SISTEMAS DIGITAIS LTDA., 
+                        inscrita no CNPJ sob no 27.137.446/0001-19, 
+                        com sede na 
+                        <a href="">
+                            Rua República do Iraque, 40 – Sala 1 Térreo, São José dos Campos/SP CEP: 12216-540
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src='js/index.js'></script>
+
+</body>
+</html>
+    
