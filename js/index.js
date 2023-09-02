@@ -35,6 +35,18 @@
     const botaoOcultoSpan = document.querySelectorAll('.botao-oculto span');
     const [span4, span5] = botaoOcultoSpan;
 
+    const plusMotivos = document.querySelector('.container-motivos .fa-plus');
+    const motivos = document.querySelector('.motivos');
+
+    const plusTopicos = document.querySelectorAll('.container-topicos .fa-plus');
+    const topicos = document.querySelectorAll('.topicos');
+
+    const plusDiferenciais = document.querySelector('.container-diferenciais-e-beneficios .fa-plus');
+    const diferenciais = document.querySelector('.diferenciais-beneficios');
+
+    const plusDuvidas = document.querySelectorAll('.duvida .fa-plus');
+    const duvida = document.querySelectorAll('.duvida div');
+
     document.addEventListener('click', e => {
 
         const el = e.target;
@@ -122,6 +134,26 @@
             cabecalhoOculto.classList.add('container-oculto-desocultar');
         } else if(el == botaoOculto || el == span4 || el == span5){
             cabecalhoOculto.classList.remove('container-oculto-desocultar');
+        }
+
+        if(el == plusMotivos){
+            motivos.classList.toggle('desocultar-motivos');
+        }
+
+        if(el == plusDiferenciais){
+            diferenciais.classList.toggle('desocultar-diferenciais');
+        }
+
+        for(let i = 0; i < plusTopicos.length; i++){
+            if(plusTopicos[i] == el){
+                topicos[i].classList.toggle('desocultar-topicos');
+            }
+        }
+
+        for(let i = 0; i < plusDuvidas.length; i++){
+            if(plusDuvidas[i] == el){
+                duvida[i].classList.toggle('desocultar-duvida');
+            }
         }
 
     })
