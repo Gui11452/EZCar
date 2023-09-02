@@ -43,6 +43,16 @@ body{
 .fa-plus{
     color: var(--cor-principal);
     cursor: pointer;
+    transition: .3s;
+}
+
+.fa-minus{
+    cursor: pointer;
+    transition: .3s;
+}
+
+.fa-plus:hover, .fa-minus:hover{
+    transform: scale(1.05);
 }
 
 .rwb-tooltip{
@@ -456,31 +466,38 @@ div.cookies-desocultar{
     color: var(--cor-preto);
 }
 
-.container-motivos span{
-    color: var(--cor-branco);
+.motivos i.fa-check{
+    color: rgb(28, 189, 28);
 }
 
-.motivos i{
-    color: rgb(28, 189, 28);
+.motivos i.fa-plus{
+    color: black;
+}
+
+.container-motivos .fa-plus-ocultar{
+    display: none !important;
 }
 
 .motivos{
     display: flex;
     max-width: 90rem;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     flex-flow: column nowrap;
     gap: 1.5rem;  
     font-size: 1.8rem;
     font-weight: bold;
-    height: 0rem;
-    overflow: hidden;
-    transition: .3s;
 }
 
-div.desocultar-motivos{
-    height: auto;
+.container-motivos span{
+    color: var(--cor-branco);
+    display: none;
 }
+
+span.desocultar-motivos{
+    display: inline !important;
+}
+
 
 .motivos-imagens{
     display: flex;
@@ -698,18 +715,11 @@ div.desocultar-motivos{
     align-items: flex-start;
     flex-flow: row wrap;
     gap: 3rem;
-    overflow: hidden;
-    height: 0rem;
-}
-
-div.desocultar-topicos{
-    height: auto;
 }
 
 .topicos h2{
     margin-bottom: 1rem;
     font-size: 2.5rem;
-    text-align: center;
 }
 
 .topicos>div{
@@ -719,6 +729,20 @@ div.desocultar-topicos{
     align-items: flex-start;
     flex-flow: column nowrap;
     gap: 1rem;
+}
+
+.topicos>div>div{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: column nowrap;
+    gap: 1rem;
+    overflow: hidden;
+    height: 0rem;
+}
+
+div.desocultar-topicos{
+    height: auto !important;
 }
 
 .topicos p{
@@ -771,12 +795,6 @@ div.desocultar-topicos{
     justify-content: center;
     /* border: 1px solid red; */
     gap: 5rem;
-    overflow: hidden;
-    height: 0rem;
-}
-
-div.desocultar-diferenciais{
-    height: auto;
 }
 
 .diferenciais-beneficios p{
@@ -795,6 +813,20 @@ div.desocultar-diferenciais{
     align-items: flex-start;
     flex-flow: column nowrap;
     gap: 0.8rem;
+}
+
+.diferenciais-beneficios>div>div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-flow: column nowrap;
+    gap: 0.8rem;
+    overflow: hidden;
+    height: 0rem;
+}
+
+div.desocultar-diferenciais{
+    height: auto !important;
 }
 
 /* Container Diferenciais e Benefícios - Fim */

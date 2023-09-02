@@ -35,14 +35,15 @@
     const botaoOcultoSpan = document.querySelectorAll('.botao-oculto span');
     const [span4, span5] = botaoOcultoSpan;
 
-    const plusMotivos = document.querySelector('.container-motivos .fa-plus');
-    const motivos = document.querySelector('.motivos');
+    const plusMotivos = document.querySelectorAll('.container-motivos .fa-plus');
+    const minusMotivos = document.querySelectorAll('.container-motivos .fa-minus');
+    const motivos = document.querySelectorAll('.motivos span');
 
     const plusTopicos = document.querySelectorAll('.container-topicos .fa-plus');
-    const topicos = document.querySelectorAll('.topicos');
+    const topicos = document.querySelectorAll('.topicos div div');
 
-    const plusDiferenciais = document.querySelector('.container-diferenciais-e-beneficios .fa-plus');
-    const diferenciais = document.querySelector('.diferenciais-beneficios');
+    const plusDiferenciais = document.querySelectorAll('.container-diferenciais-e-beneficios .fa-plus');
+    const diferenciais = document.querySelectorAll('.diferenciais-beneficios div div');
 
     const plusDuvidas = document.querySelectorAll('.duvida .fa-plus');
     const duvida = document.querySelectorAll('.duvida div');
@@ -56,7 +57,6 @@
         }
         
         if(el == popupDiv || el == popupSpan1 || el == popupSpan2){
-            console.log(el);
             popup.classList.toggle('popup-ocultar');
         }
 
@@ -136,17 +136,31 @@
             cabecalhoOculto.classList.remove('container-oculto-desocultar');
         }
 
-        if(el == plusMotivos){
-            motivos.classList.toggle('desocultar-motivos');
+        for(let i = 0; i < plusMotivos.length; i++){
+            if(plusMotivos[i] == el){
+                console.log(el);
+                plusMotivos[i].classList.toggle('fa-plus-ocultar');
+                motivos[i].classList.toggle('desocultar-motivos');
+            }
         }
 
-        if(el == plusDiferenciais){
-            diferenciais.classList.toggle('desocultar-diferenciais');
+        for(let i = 0; i < minusMotivos.length; i++){
+            if(minusMotivos[i] == el){
+                console.log(el);
+                plusMotivos[i].classList.toggle('fa-plus-ocultar');
+                motivos[i].classList.toggle('desocultar-motivos');
+            }
         }
 
         for(let i = 0; i < plusTopicos.length; i++){
             if(plusTopicos[i] == el){
                 topicos[i].classList.toggle('desocultar-topicos');
+            }
+        }
+
+        for(let i = 0; i < plusDiferenciais.length; i++){
+            if(plusDiferenciais[i] == el){
+                diferenciais[i].classList.toggle('desocultar-diferenciais');
             }
         }
 
