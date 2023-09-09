@@ -35,17 +35,14 @@
     const botaoOcultoSpan = document.querySelectorAll('.botao-oculto span');
     const [span4, span5] = botaoOcultoSpan;
 
-    const plusMotivos = document.querySelectorAll('.container-motivos .fa-plus');
-    const minusMotivos = document.querySelectorAll('.container-motivos .fa-minus');
-    const motivos = document.querySelectorAll('.motivos span');
-
     const plusTopicos = document.querySelectorAll('.container-topicos .fa-plus');
     const topicos = document.querySelectorAll('.topicos div div');
 
     const plusDiferenciais = document.querySelectorAll('.container-diferenciais-e-beneficios .fa-plus');
     const diferenciais = document.querySelectorAll('.diferenciais-beneficios div div');
 
-    const plusDuvidas = document.querySelectorAll('.duvida .fa-plus');
+    const plusDuvidas = document.querySelectorAll('.duvida .fa-angle-right');
+    const plusDuvidasH3 = document.querySelectorAll('.duvida h3');
     const duvida = document.querySelectorAll('.duvida div');
 
     document.addEventListener('click', e => {
@@ -136,22 +133,6 @@
             cabecalhoOculto.classList.remove('container-oculto-desocultar');
         }
 
-        for(let i = 0; i < plusMotivos.length; i++){
-            if(plusMotivos[i] == el){
-                console.log(el);
-                plusMotivos[i].classList.toggle('fa-plus-ocultar');
-                motivos[i].classList.toggle('desocultar-motivos');
-            }
-        }
-
-        for(let i = 0; i < minusMotivos.length; i++){
-            if(minusMotivos[i] == el){
-                console.log(el);
-                plusMotivos[i].classList.toggle('fa-plus-ocultar');
-                motivos[i].classList.toggle('desocultar-motivos');
-            }
-        }
-
         for(let i = 0; i < plusTopicos.length; i++){
             if(plusTopicos[i] == el){
                 topicos[i].classList.toggle('desocultar-topicos');
@@ -164,9 +145,13 @@
             }
         }
 
-        for(let i = 0; i < plusDuvidas.length; i++){
-            if(plusDuvidas[i] == el){
+        for(let i = 0; i < plusDuvidasH3.length; i++){
+            if(plusDuvidasH3[i] == el || plusDuvidas[i] == el){
                 duvida[i].classList.toggle('desocultar-duvida');
+                plusDuvidas[i].classList.toggle('virar');
+                /* let altura = duvida[i].getBoundingClientRect().height
+                console.log(altura);
+                duvida[i].style.height = altura; */
             }
         }
 
