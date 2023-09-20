@@ -483,6 +483,12 @@ div.cookies-desocultar{
     color: var(--cor-branco);
 }
 
+.motivos>h3{
+    font-size: 3rem;
+    color: var(--cor-branco);
+    text-decoration: underline;
+}
+
 .container-motivos span{
     color: var(--cor-branco);
 }
