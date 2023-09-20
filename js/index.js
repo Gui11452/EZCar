@@ -23,7 +23,8 @@
     }, 2000)
 
     const cabecalhoOcultoNavA = document.querySelectorAll('.cabecalho-oculto nav a');
-    const [a6, a7, a8, a9, a10] = cabecalhoOcultoNavA;
+    // const [a6, a7, a8, a9, a10] = cabecalhoOcultoNavA;
+    const [a6, a7] = cabecalhoOcultoNavA;
 
     const cabecalhoOculto = document.querySelector('.cabecalho-oculto');
 
@@ -44,6 +45,18 @@
     const plusDuvidas = document.querySelectorAll('.duvida .fa-angle-right');
     const plusDuvidasH3 = document.querySelectorAll('.duvida h3');
     const duvida = document.querySelectorAll('.duvida div');
+    const botaoMostrarMaisDuvidas = document.querySelector('.duvidas>span');
+    const duvidas = document.querySelectorAll('.duvida');
+
+    const plusMotivos = document.querySelectorAll('.motivo .fa-angle-right');
+    const plusMotivosH3 = document.querySelectorAll('.motivo h3');
+    const motivo = document.querySelectorAll('.motivo div');
+
+    for(let i = 0; i < duvidas.length; i++){
+        if(i > 5){
+            duvidas[i].classList.add('duvida-ocultar');
+        }
+    }
 
     document.addEventListener('click', e => {
 
@@ -57,8 +70,8 @@
             popup.classList.toggle('popup-ocultar');
         }
 
-        if(el == a1 || el == a2 || el == a3|| el == a4 || el == a5 || 
-            el == a6 || el == a7 || el == a8 || el == a9 || el == a10){
+        if(el == a1 || el == a2 || el == a3|| el == a4 || el == a5 || el == a7){
+           // el == a6 || el == a7 || el == a8 || el == a9 || el == a10){
             e.preventDefault();
             const href = el.getAttribute('href');
             const to = document.querySelector(href).offsetTop;
@@ -149,9 +162,28 @@
             if(plusDuvidasH3[i] == el || plusDuvidas[i] == el){
                 duvida[i].classList.toggle('desocultar-duvida');
                 plusDuvidas[i].classList.toggle('virar');
-                /* let altura = duvida[i].getBoundingClientRect().height
-                console.log(altura);
-                duvida[i].style.height = altura; */
+            }
+        }
+
+        for(let i = 0; i < plusMotivosH3.length; i++){
+            if(plusMotivosH3[i] == el || plusMotivos[i] == el){
+                motivo[i].classList.toggle('desocultar-motivo');
+                plusMotivos[i].classList.toggle('virar');
+            }
+        }
+
+        if(el == botaoMostrarMaisDuvidas){
+            e.preventDefault();
+            for(let i = 0; i < duvidas.length; i++){
+                if(i > 5){
+                    duvidas[i].classList.toggle('duvida-ocultar');
+                }
+            }
+
+            if(!duvidas[duvidas.length - 1].classList.contains('duvida-ocultar')){
+                botaoMostrarMaisDuvidas.innerHTML = 'Ocultar as dúvidas';
+            } else{
+                botaoMostrarMaisDuvidas.innerHTML = 'Mostrar mais dúvidas';
             }
         }
 
