@@ -455,7 +455,7 @@ div.cookies-desocultar{
 
 .container-motivos{
     width: 100%;
-    background: url('../images/carro4.jpg') center;
+    background: url('../images/carro4.webp') center;
     background-size: cover;
     color: var(--cor-secundaria);
 }
@@ -1275,7 +1275,7 @@ div.desocultar-duvida{
 /* Container Blog - Início */
 
 .container-blog{
-    background: url('../images/carro.jpg') center;
+    background: url('../images/carro.webp') center;
     background-size: cover;
     width: 100%;
 }
@@ -1340,7 +1340,7 @@ div.desocultar-duvida{
 /* Container Cadastro - Início */
 
 .container-cadastro{
-    /* background: url('../images/carro3.jpg') center; */
+    /* background: url('../images/carro3.webp') center; */
     background: var(--linear-gradient-fundo-azul);
     background-size: cover;
     width: 100%;
@@ -1443,7 +1443,7 @@ div.desocultar-duvida{
 
 .container-rodape{
     width: 100%;
-    background: url('../images/carro2.jpg') center;
+    background: url('../images/carro2.webp') center;
     background-size: cover;
 }
 
