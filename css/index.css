@@ -96,7 +96,7 @@ body{
     padding: 1rem;
     width: 100%;
     position: fixed;
-    top: 10.8rem;
+    top: 9.8rem;
     right: 0;
     left: 0;
     font-size: 1.7rem;
@@ -174,6 +174,14 @@ div.cookies-desocultar{
     gap: 2rem;
 }
 
+.motivos-imagens a{
+    transition: .3s;
+}
+
+.motivos-imagens a:hover{
+    transform: scale(1.05);
+}
+
 .motivos-imagens img{
     max-width: 20rem;
 }
@@ -186,7 +194,7 @@ div.cookies-desocultar{
 
 .cabecalho, .cabecalho-mobile{
     width: 100%;
-    padding: 1.5rem 0;
+    padding: 1rem 0;
     background: var(--cor-terciaria);
     position: fixed;
     top: 0;
@@ -455,16 +463,11 @@ div.cookies-desocultar{
 
 .container-motivos{
     width: 100%;
-    background: url('../images/carro4.webp') center;
-    background-size: cover;
+    background: var(--linear-gradient-fundo-azul);
     color: var(--cor-secundaria);
 }
 
 .container-motivos>div{
-    background: rgba(36, 152, 219, 0.6) top;
-}
-
-.container-motivos>div>div{
     width: 90%;
     margin: 0 auto;
     padding: 3rem 0;
@@ -472,10 +475,15 @@ div.cookies-desocultar{
     display: flex;
     /* border: 1px solid red; */
     justify-content: center;
-    align-items: center;
-    flex-flow: column nowrap;
+    align-items: flex-start;
+    flex-flow: row wrap;
     gap: 4rem;
     font-family: var(--fonte-paragrafos);
+}
+
+.container-motivos>div img{
+    max-width: 35rem;
+    border: 0.4rem solid var(--cor-branco);
 }
 
 .container-motivos h2{
@@ -483,105 +491,94 @@ div.cookies-desocultar{
     color: var(--cor-branco);
 }
 
-.motivos>h3{
-    font-size: 3rem;
-    color: var(--cor-branco);
-    text-decoration: underline;
-}
-
-.container-motivos span{
-    color: var(--cor-branco);
-}
-
-.grid-motivos{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-flow: row nowrap;
-    /* border: 1px solid red; */
-    gap: 4rem;
+.container-motivos h2 span{
+    color: var(--cor-preto);
 }
 
 .motivos{
-    /* border: 0.2rem solid green; */
     display: flex;
-    width: 80%;
-    margin: 0 auto;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-    /* border: 1px solid red; */
-}
-
-/* .duvidas>div{
-    display: flex;
-    flex-flow: column nowrap;
     justify-content: center;
     align-items: flex-start;
-    gap: 3rem;
-} */
-
-.motivo{
-    width: 100%;
-    display: flex;
     flex-flow: column nowrap;
-    justify-content: center;
-    align-items: flex-start;
-    /* border: 1px solid red; */
-    background: #e7e6e6;
-    border-radius: 2rem;
+    gap: 2rem;
 }
 
-.motivo>div{
+.grid-motivos{
+    /* border: 1px solid palevioletred; */
+    /* width: 100%; */
     display: flex;
-    flex-flow: column nowrap;
     justify-content: center;
     align-items: flex-start;
-    /* gap: 1rem; */
-    /* padding: 2rem; */
-    overflow: hidden;
-    height: 0rem;
-    transition: .3s;
-}
-
-div.desocultar-motivo{
-    height: auto;
+    flex-flow: row wrap;
+    gap: 4rem;
 }
 
 .motivo h3{
-    cursor: pointer;
-    width: 100%;
+    color: var(--cor-branco);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: row nowrap;
+    gap: 1rem;
     font-size: 2rem;
-    background: var(--cor-branco);
-    font-family: var(--fonte-titulos);
-    color: var(--cor-secundaria);
-    padding: 2rem;
-    position: relative;
-    border-radius: 2rem;
+    /* border: 1px solid black; */
+    width: 100%;
+    cursor: pointer;
 }
 
-.motivo p{
-    font-weight: bold;
-    font-family: var(--fonte-paragrafos);
-    font-size: 1.5rem;
-    color: var(--cor-principal);
-    padding: 1rem;
+.grid-motivos>div{
+    max-width: 33rem;
+    /* border: 1px solid yellow; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-flow: column nowrap;
+    gap: 1rem;
 }
 
-.motivo i{
-    color: var(--cor-principal);
+.grid-motivos>div>h3{
+    text-decoration: underline;
+    align-self: center;
+    color: var(--cor-branco);
+    font-size: 2rem;
 }
 
-.motivo i.virar{
+.motivo{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    gap: 0.5rem;
+    /* border: 1px solid purple; */
+}
+
+.motivo h3 p{
+    /* word-break: break-all; */
+}
+
+.motivo>p{
+    color: var(--cor-branco);
+    display: none;
+}
+
+.motivo>p.desocultar-motivo{
+    display: block;
+}
+
+.grid-motivos h3 span{
+    font-size: 7rem;
+}
+
+.grid-motivos i{
+    cursor: pointer;
+    transition: .3s;
+}
+
+.grid-motivos i.virar{
     transform: rotate(-90deg);
 }
 
-.motivo h3 i{
-    position: absolute;
-    right: 2rem;
-    top: 35%;
+.grid-motivos i:hover{
+    transform: scale(1.05);
 }
 
 /* Container Motivos - Fim */
@@ -691,6 +688,7 @@ div.desocultar-motivo{
 }
 
 .container-video>div{
+    padding: 2rem 0;
     width: 90%;
     margin: 0 auto;
 }
@@ -786,7 +784,7 @@ div.desocultar-motivo{
 }
 
 .imagens-video>div img{
-    width: 7rem;
+    width: 5rem;
 }
 
 .imagens-video span{
@@ -794,8 +792,6 @@ div.desocultar-motivo{
     background: var(--cor-branco);
     width: 7rem;
 }
-
-/* width="560" height="315" */
 
 /* Container Motivos - Fim */
 
@@ -809,6 +805,7 @@ div.desocultar-motivo{
 
 .container-topicos>div{
     width: 90%;
+    padding: 2rem 0;
     margin: 0 auto;
     min-height: 92vh;
     display: flex;
@@ -1246,9 +1243,9 @@ div.desocultar-duvida{
     cursor: pointer;
     border-radius: 2rem;
     width: 100%;
-    font-size: 2rem;
+    font-size: 2.5rem;
     background: var(--cor-branco);
-    font-family: var(--fonte-titulos);
+    font-family: var(--fonte-paragrafos);
     color: var(--cor-secundaria);
     padding: 2rem;
     position: relative;
@@ -1280,7 +1277,7 @@ div.desocultar-duvida{
 
 /* Container Blog - Início */
 
-.container-blog{
+/* .container-blog{
     background: url('../images/carro.webp') center;
     background-size: cover;
     width: 100%;
@@ -1296,7 +1293,6 @@ div.desocultar-duvida{
     margin: 0 auto;
     min-height: 92vh;
     display: flex;
-    /* border: 1px solid red; */
     justify-content: center;
     align-items: center;
     flex-flow: column nowrap;
@@ -1309,7 +1305,6 @@ div.desocultar-duvida{
     color: var(--cor-branco);
     text-align: center;
     display: flex;
-    /* border: 1px solid red; */
     justify-content: center;
     align-items: center;
     flex-flow: column nowrap;
@@ -1339,7 +1334,7 @@ div.desocultar-duvida{
 
 .post a:hover{
     transform: scale(1.05);
-}
+} */
 
 /* Container Blog - Fim */
 
@@ -1354,6 +1349,7 @@ div.desocultar-duvida{
 
 .container-cadastro>div{
     width: 100%;
+    padding: 2rem 0;
     /* background: linear-gradient(90deg, rgba(50,109,143,0.7) 35%, rgba(11,152,233,0.7) 69%); */
 }
 
@@ -1455,7 +1451,7 @@ div.desocultar-duvida{
 
 .container-rodape>div{
     width: 100%;
-    padding: 0 0 1rem 0;
+    padding: 2rem 0;
     margin: 0 auto;
     display: flex;
     min-height: 92vh;
@@ -1602,6 +1598,23 @@ div.desocultar-duvida{
     }
 } */
 
+@media(max-width: 1210px){
+    .container-motivos>div img{
+        max-width: 25rem;
+    }
+
+    .container-motivos>div{
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .motivos h2{
+        width: 100%;
+        text-align: center;
+    }
+}
+
 @media(max-width: 1035px){
 
     header.container-oculto-desocultar{
@@ -1640,14 +1653,6 @@ div.desocultar-duvida{
 
 }
 
-@media(max-width: 795px){
-    .box-motivos{
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
 @media(max-width: 760px){
     /* .video{
         flex-flow: column nowrap;
@@ -1666,7 +1671,7 @@ div.desocultar-duvida{
 }
 
 @media(max-width: 660px){
-    .grid-motivos{
+    /* .grid-motivos{
         align-items: center;
         flex-flow: column nowrap;
         gap: 4rem;
@@ -1674,7 +1679,7 @@ div.desocultar-duvida{
 
     .motivos{
         width: 100%;
-    }
+    } */
 }
 
 @media(max-width: 540px){
@@ -1708,11 +1713,6 @@ div.desocultar-duvida{
 }
 
 @media(max-width: 490px){
-
-    .box-motivos img{
-        width: 100%;
-        max-width: none;
-    }
 
     .container-home>div img{
         width: 100%;
