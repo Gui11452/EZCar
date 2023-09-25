@@ -17,6 +17,7 @@ html{
 body{
     width: 100%;
     font-size: 1.5rem;
+    background: var(--linear-gradient-fundo);
 }
 
 @font-face{
@@ -189,7 +190,7 @@ div.cookies-desocultar{
 /* Cabecalho - Início */
 
 .cabecalho-invisivel{
-    min-height: 8rem;
+    min-height: 10rem;
 }
 
 .cabecalho, .cabecalho-mobile{
@@ -237,9 +238,9 @@ div.cookies-desocultar{
     gap: 1.5rem;
 }
 
-.cabecalho-mobile{
+/* .cabecalho-mobile{
     display: none;
-}
+} */
 
 .cabecalho>div, .cabecalho-mobile>div{
     width: 90%;
@@ -1635,11 +1636,15 @@ div.desocultar-duvida{
     }
 }
 
+header.container-oculto-desocultar{
+    transform: translateX(0rem);
+}
+
 @media(max-width: 1035px){
 
-    header.container-oculto-desocultar{
+    /* header.container-oculto-desocultar{
         transform: translateX(0rem);
-    }
+    } */
 
     .cabecalho-mobile{
         display: block;
