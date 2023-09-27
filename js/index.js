@@ -5,9 +5,9 @@
 
     const rodapeValores = document.querySelectorAll('.rodape ul li a');
 
-    const cabecalhoDropdownDiv = document.querySelectorAll('.dropdown div');
+    /* const cabecalhoDropdownDiv = document.querySelectorAll('.dropdown div');
     const cabecalhoDropdownP = document.querySelectorAll('.dropdown a p');
-    const cabecalhoDropdownI = document.querySelectorAll('.dropdown i');
+    const cabecalhoDropdownI = document.querySelectorAll('.dropdown i'); */
 
     const cookies = document.querySelector('.cookies');
     const cookiesSpan = document.querySelector('.cookies span');
@@ -25,7 +25,7 @@
     const parteOculta = document.querySelectorAll('.parte-oculta a');
     const [a8, a9] = parteOculta;
     // const [a6, a7, a8, a9, a10] = cabecalhoOcultoNavA;
-    const [a6, a7] = cabecalhoOcultoNavA;
+    const [a6, a7, a10] = cabecalhoOcultoNavA;
 
     const cabecalhoOculto = document.querySelector('.cabecalho-oculto');
 
@@ -73,8 +73,7 @@
             popup.classList.toggle('popup-ocultar');
         }
 
-        if(el == a1 || el == a2|| el == a7 || el == a8 || el == a9){
-           // el == a6 || el == a7 || el == a8 || el == a9 || el == a10){
+        if(el == a1 || el == a2|| el == a8 || el == a9 || el == a10){
             e.preventDefault();
             const href = el.getAttribute('href');
             const to = document.querySelector(href).offsetTop;
@@ -101,7 +100,7 @@
             }
         }
 
-        for(let dropdownDiv of cabecalhoDropdownDiv){
+        /* for(let dropdownDiv of cabecalhoDropdownDiv){
             if(el == dropdownDiv){
                 e.preventDefault();
                 const href = el.getAttribute('href');
@@ -141,13 +140,7 @@
                 })
                 break;
             }
-        }
-
-        if(el == botaoMobile || el == span1 || el == span2 || el == span3){
-            cabecalhoOculto.classList.add('container-oculto-desocultar');
-        } else if(el == botaoOculto || el == span4 || el == span5){
-            cabecalhoOculto.classList.remove('container-oculto-desocultar');
-        }
+        } */
 
         for(let i = 0; i < plusTopicos.length; i++){
             if(plusTopicos[i] == el){
@@ -191,6 +184,16 @@
             }
         }
 
+    })
+
+    document.addEventListener('mouseover', e => {
+        const el = e.target;
+
+        if(el == botaoMobile || el == span1 || el == span2 || el == span3){
+            cabecalhoOculto.classList.add('container-oculto-desocultar');
+        } else if(el == botaoOculto || el == span4 || el == span5){
+            cabecalhoOculto.classList.remove('container-oculto-desocultar');
+        }
     })
 
 })();
