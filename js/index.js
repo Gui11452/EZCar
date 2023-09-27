@@ -1,7 +1,7 @@
 (function(){
 
-    const cabecalhoNavA = document.querySelectorAll('.cabecalho nav a');
-    const [a1, a2, a3] = cabecalhoNavA;
+    const cabecalhoNavA = document.querySelectorAll('.cabecalho-mobile nav a');
+    const [a1, a2] = cabecalhoNavA;
 
     const rodapeValores = document.querySelectorAll('.rodape ul li a');
 
@@ -21,9 +21,11 @@
         cookies.classList.toggle('cookies-desocultar');
     }, 2000)
 
-    const cabecalhoOcultoNavA = document.querySelectorAll('.cabecalho-oculto nav a');
+    const cabecalhoOcultoNavA = document.querySelectorAll('.cabecalho-oculto nav>a');
+    const parteOculta = document.querySelectorAll('.parte-oculta a');
+    const [a8, a9] = parteOculta;
     // const [a6, a7, a8, a9, a10] = cabecalhoOcultoNavA;
-    const [a6, a7, a8] = cabecalhoOcultoNavA;
+    const [a6, a7] = cabecalhoOcultoNavA;
 
     const cabecalhoOculto = document.querySelector('.cabecalho-oculto');
 
@@ -54,7 +56,7 @@
     const motivo = document.querySelectorAll('.motivo>p');
 
     for(let i = 0; i < duvidas.length; i++){
-        if(i > 3){
+        if(i > 4){
             duvidas[i].classList.add('duvida-ocultar');
         }
     }
@@ -71,7 +73,7 @@
             popup.classList.toggle('popup-ocultar');
         }
 
-        if(el == a2 || el == a3|| el == a7 || el == a8){
+        if(el == a1 || el == a2|| el == a7 || el == a8 || el == a9){
            // el == a6 || el == a7 || el == a8 || el == a9 || el == a10){
             e.preventDefault();
             const href = el.getAttribute('href');
@@ -177,7 +179,7 @@
         if(el == botaoMostrarMaisDuvidas){
             e.preventDefault();
             for(let i = 0; i < duvidas.length; i++){
-                if(i > 5){
+                if(i > 4){
                     duvidas[i].classList.toggle('duvida-ocultar');
                 }
             }
