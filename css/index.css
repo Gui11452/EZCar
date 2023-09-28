@@ -704,7 +704,7 @@ div.cookies-desocultar{
     flex-flow: column nowrap;
     gap: 2.5rem;
     min-height: 92vh;
-    padding: 2rem 0;
+    padding: 4rem 0;
     font-family: var(--fonte-paragrafos);
     color: var(--cor-secundaria);
 }
@@ -864,7 +864,7 @@ div.video2 .imagens-video span{
     width: 100%;
     /* border: 1px solid red; */
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     flex-flow: row nowrap;
     gap: 14rem;
 }
@@ -876,6 +876,7 @@ div.video2 .imagens-video span{
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    height: auto;
     max-width: 65rem;
 }
 

@@ -1,7 +1,7 @@
 (function(){
 
     const cabecalhoNavA = document.querySelectorAll('.cabecalho-mobile nav a');
-    const [a1, a2] = cabecalhoNavA;
+    const [a1, a2, a3, a4] = cabecalhoNavA;
 
     const rodapeValores = document.querySelectorAll('.rodape ul li a');
 
@@ -23,9 +23,9 @@
 
     const cabecalhoOcultoNavA = document.querySelectorAll('.cabecalho-oculto nav>a');
     const parteOculta = document.querySelectorAll('.parte-oculta a');
-    const [a8, a9] = parteOculta;
+    const [a8, a9, a10, a11] = parteOculta;
     // const [a6, a7, a8, a9, a10] = cabecalhoOcultoNavA;
-    const [a6, a7, a10] = cabecalhoOcultoNavA;
+    const [a6, a7, a5] = cabecalhoOcultoNavA;
 
     const cabecalhoOculto = document.querySelector('.cabecalho-oculto');
 
@@ -73,7 +73,8 @@
             popup.classList.toggle('popup-ocultar');
         }
 
-        if(el == a1 || el == a2|| el == a8 || el == a9 || el == a10){
+        if(el == a1 || el == a2|| el == a3 || el == a4 || el == a5
+            || el == a7 || el == a8 || el == a9 || el == a10 || el == a11){
             e.preventDefault();
             const href = el.getAttribute('href');
             const to = document.querySelector(href).offsetTop;
