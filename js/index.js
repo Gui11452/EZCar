@@ -56,7 +56,7 @@
     const motivo = document.querySelectorAll('.motivo>p');
 
     for(let i = 0; i < duvidas.length; i++){
-        if(i > 4){
+        if(i > 5){
             duvidas[i].classList.add('duvida-ocultar');
         }
     }
@@ -173,7 +173,7 @@
         if(el == botaoMostrarMaisDuvidas){
             e.preventDefault();
             for(let i = 0; i < duvidas.length; i++){
-                if(i > 4){
+                if(i > 5){
                     duvidas[i].classList.toggle('duvida-ocultar');
                 }
             }
