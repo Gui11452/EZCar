@@ -621,7 +621,7 @@ div.cookies-desocultar{
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
     color: var(--cor-branco);
     /* border: 1px solid red; */
     font-family: var(--fonte-paragrafos);
@@ -718,73 +718,6 @@ div.cookies-desocultar{
     font-size: 2rem;
 }
 
-/* .produto{
-    width: 90%;
-    margin: 0 auto;
-    background: var(--linear-gradient-fundo);
-    min-height: 92vh;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    width: 100%;
-    color: var(--cor-branco);
-}
-
-.produto img{
-    width: 100%;
-}
-
-.produto-imagem-desktop{
-    display: block;
-}
-
-.produto-imagem-mobile{
-    display: none;
-}
-
-.produto-imagem-quadrada{
-    display: none;
-}
-
-.produto h2{
-    font-family: var(--fonte-titulos);
-    font-size: 1.4rem;
-    color: var(--cor-principal);
-    text-align: center;
-}
-
-.produto>div{
-    position: relative;
-    border: 0.3rem solid var(--cor-principal);
-    box-shadow: 0.2rem 0.2rem 2rem #2498DB;
-    width: 70%;
-}
-
-.produto a{
-    background: var(--cor-principal);
-    border-radius: 1rem;
-    font-family: var(--fonte-paragrafos);
-    font-weight: bold;
-    padding: 1rem;
-    text-align: center;
-    color: var(--cor-branco);
-    transition: .3s;
-    font-size: 1.7rem;
-    position: absolute;
-    top: 1rem;
-    left: 0;
-    right: 0;
-    max-width: 15rem;
-    margin: 0 auto;
-    transition: .3s;
-}
-
-.produto a:hover{
-    transform: scale(1.05);
-} */
-
 /* Container Produtos - Fim */
 
 /* Container Motivos - Início */
@@ -822,17 +755,19 @@ div.video2{
     justify-content: center;
     align-items: center;
     flex-flow: column nowrap;
-    gap: 2rem;
+    gap: 1rem;
     padding: 3rem 1rem;
     font-family: var(--fonte-paragrafos);
 }
 
 .video2 p{
     color: var(--cor-principal);
+    text-align: center;
 }
 
 .video1 p{
     color: var(--cor-branco);
+    text-align: center;
 }
 
 .container-video h2{
@@ -1140,6 +1075,7 @@ div.video2 .imagens-video span{
 .container-duvidas h2{
     font-size: 4rem;
     color: var(--cor-principal);
+    text-align: center;
 }
 
 .container-duvidas span{
