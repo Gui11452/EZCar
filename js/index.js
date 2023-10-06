@@ -83,6 +83,7 @@
                 top: to - 80,
                 behavior: 'smooth',
             })
+            popup.classList.toggle('popup-ocultar');
             return;
         }
 
@@ -97,7 +98,8 @@
                     behavior: 'smooth',
                 })
 
-                break;
+                popup.classList.toggle('popup-ocultar');
+                return;
             }
         }
 
