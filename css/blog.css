@@ -242,6 +242,38 @@ div.cookies-desocultar{
     display: none;
 }
 
+.cabecalho-oculto form{
+    display: none;
+}
+
+header form{
+    position: relative;
+}
+
+header form input{
+    padding: 0.5rem 1.5rem;
+    border: 0.2rem solid var(--cor-secundaria);
+    border-radius: 1rem;
+    background: transparent;
+    transition: .3s;
+    font-size: 1.6rem;
+}
+
+header form label{
+    position: absolute;
+    top: 0.65rem;
+    right: 0.65rem;
+}
+
+header form i{
+    color: var(--cor-secundaria);
+    font-size: 2rem;
+}
+
+header form input:focus{
+    transform: scale(1.01);
+}
+
 .cabecalho>div, .cabecalho-mobile>div{
     width: 90%;
     margin: 0 auto;
@@ -819,9 +851,13 @@ div.cookies-desocultar{
 
 @media (max-width: 532px){
 
-    /* html{
-        font-size: 55%;
-    } */
+    .cabecalho-oculto form{
+        display: block;
+    }
+
+    .cabecalho-mobile form{
+        display: none;
+    }
 
     .coluna2 a img{
         width: 15rem;
