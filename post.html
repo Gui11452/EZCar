@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="
+    Em busca de comprar ou vender um veículo
+    seminovo ou usado, verificado e vistoriado,
+    com transparência e sem intermediários
+    caros? Conheça o EZCar, um app inovador
+    que veio para revolucionar o mercado,
+    possibilitando  o melhor preço e negociações
+    seguras.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/fontawesome.min.css" integrity="sha512-cHxvm20nkjOUySu7jdwiUxgGy11vuVPE9YeK89geLMLMMEOcKFyS2i+8wo0FOwyQO/bL8Bvq1KMsqK4bbOsPnA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/brands.min.css" integrity="sha512-L+sMmtHht2t5phORf0xXFdTC0rSlML1XcraLTrABli/0MMMylsJi3XA23ReVQkZ7jLkOEIMicWGItyK4CAt2Xw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/solid.min.css" integrity="sha512-bdTSJB23zykBjGDvyuZUrLhHD0Rfre0jxTd0/jpTbV7sZL8DCth/88aHX0bq2RV8HK3zx5Qj6r2rRU/Otsjk+g==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href='css/post.css'>
+    <link rel="stylesheet" href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css">
+    <link rel="icon" href='images/favicon_ezcar.webp'>
+    <title> EZCar </title>
+</head>
+<body>
+    
+    <a id="robbu-whatsapp-button" target="_blank" href="https://api.whatsapp.com/send?phone=5511999999999&text=Ol%C3%A1,%20tudo%20bem?">
+        <div class="rwb-tooltip">Fale Conosco</div>
+        <img src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg">
+    </a>
+
+    <div class="cookies">
+        <p>
+            Este site usa cookies para melhorar a sua experiência em nossa plataforma.
+            Ao navegar pelo site, declaro que estou ciente dos termos deste
+            <a href="">
+                Aviso de Privacidade
+            </a>
+        </p>
+        <span>
+            Aceito
+        </span>
+    </div>
+
+    <div class="popup">
+        <p>
+            Atenção! Não enviamos mensagens ou ligamos solicitando dados pessoais, 
+            códigos ou qualquer pagamento. Tudo é feito através do próprio app EZCar.
+        </p>
+        <div>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <header class="cabecalho-invisivel"></header>
+
+    <header class="cabecalho-mobile">
+        <div>
+            <a href="{% url 'home' %}">
+                <img src='images/logo_ezcar.webp' alt="EZCAR">
+            </a>
+            <div>
+                <form method="POST" action="">
+                    <input type="search" name="search" id="search" placeholder="O que você procura?">
+                    <label for="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </label>
+                </form>
+                <div class="botao-mobile">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <header class="cabecalho-oculto">
+        <div class="botao-oculto">
+            <span></span>
+            <span></span>
+        </div>
+        <a href="{% url 'home' %}">
+            <img src='images/logo_ezcar.webp' alt="EZCAR">
+        </a>
+        <nav>
+            <form method="POST" action="">
+                <input type="search" name="search" id="search" placeholder="O que você procura?">
+                <label for="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </label>
+            </form>
+            <a href=".container-motivos">
+                Por que o EZCar?
+                <span></span>
+            </a>
+            <a href=".container-ezcar">
+                Como Funciona
+                <span></span>
+            </a>
+            <a href=".video1">
+                Quero vender
+                <span></span>
+            </a>
+            <a href=".video2">
+                Quero comprar
+                <span></span>
+            </a>
+            <a href=".container-parceiros">
+                Parceiros
+                <span></span>
+            </a>
+            <a href=".container-duvidas">
+                Perguntas frequentes
+                <span></span>
+            </a>
+            <a href="https://ijavendi.com.br">
+                Quem somos
+                <span></span>
+            </a>
+        </nav>
+    </header>
+
+    <div class="container-post">
+        <div>
+            <div class="post">
+                <h1>
+                    Veja os 5 modelos que menos
+                    se desvalorizam no mercado
+                </h1>
+                <small>
+                    by EZCAR | Janeiro 7, 2022 | Carros | 0 Comments
+                </small>
+                <img src="images/carro.webp" alt="">
+                <p>
+                    Lorem Ipsum é simplesmente um texto fictício da 
+                    indústria de impressão e composição tipográfica. 
+                    Lorem Ipsum tem sido o texto fictício padrão da 
+                    indústria desde 1500, quando um impressor desconhecido 
+                    pegou uma prova de tipos e a misturou para fazer um 
+                    livro de espécimes de tipos. Ela sobreviveu não apenas 
+                    a cinco séculos, mas também ao salto para a composição 
+                    tipográfica eletrônica, permanecendo essencialmente 
+                    inalterada. Foi popularizado na década de 1960 com o 
+                    lançamento de folhas Letraset contendo passagens de 
+                    Lorem Ipsum e, mais recentemente, com software de 
+                    editoração eletrônica como Aldus PageMaker, incluindo 
+                    versões de Lorem Ipsum.
+                </p>
+                <p>
+                    Lorem Ipsum é simplesmente um texto fictício da 
+                    indústria de impressão e composição tipográfica. 
+                    Lorem Ipsum tem sido o texto fictício padrão da 
+                    indústria desde 1500, quando um impressor desconhecido 
+                    pegou uma prova de tipos e a misturou para fazer um 
+                    livro de espécimes de tipos. Ela sobreviveu não apenas 
+                    a cinco séculos, mas também ao salto para a composição 
+                    tipográfica eletrônica, permanecendo essencialmente 
+                    inalterada. Foi popularizado na década de 1960 com o 
+                    lançamento de folhas Letraset contendo passagens de 
+                    Lorem Ipsum e, mais recentemente, com software de 
+                    editoração eletrônica como Aldus PageMaker, incluindo 
+                    versões de Lorem Ipsum.
+                </p>
+                <p>
+                    Lorem Ipsum é simplesmente um texto fictício da 
+                    indústria de impressão e composição tipográfica. 
+                    Lorem Ipsum tem sido o texto fictício padrão da 
+                    indústria desde 1500, quando um impressor desconhecido 
+                    pegou uma prova de tipos e a misturou para fazer um 
+                    livro de espécimes de tipos. Ela sobreviveu não apenas 
+                    a cinco séculos, mas também ao salto para a composição 
+                    tipográfica eletrônica, permanecendo essencialmente 
+                    inalterada. Foi popularizado na década de 1960 com o 
+                    lançamento de folhas Letraset contendo passagens de 
+                    Lorem Ipsum e, mais recentemente, com software de 
+                    editoração eletrônica como Aldus PageMaker, incluindo 
+                    versões de Lorem Ipsum.
+                </p>
+                <img src="images/carro.webp" alt="">
+                <p>
+                    Lorem Ipsum é simplesmente um texto fictício da 
+                    indústria de impressão e composição tipográfica. 
+                    Lorem Ipsum tem sido o texto fictício padrão da 
+                    indústria desde 1500, quando um impressor desconhecido 
+                    pegou uma prova de tipos e a misturou para fazer um 
+                    livro de espécimes de tipos. Ela sobreviveu não apenas 
+                    a cinco séculos, mas também ao salto para a composição 
+                    tipográfica eletrônica, permanecendo essencialmente 
+                    inalterada. Foi popularizado na década de 1960 com o 
+                    lançamento de folhas Letraset contendo passagens de 
+                    Lorem Ipsum e, mais recentemente, com software de 
+                    editoração eletrônica como Aldus PageMaker, incluindo 
+                    versões de Lorem Ipsum.
+                </p>
+            </div>
+            <span></span>
+            <form action="" method="POST">
+                <h3>
+                    Comente agora no vídeo
+                </h3>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Escreva algo..."></textarea>
+                <small></small>
+                <input type="submit" value="Enviar">
+                <!-- <h4>
+                    Sem comentários no momento
+                </h4> -->
+                <div class="comentario">
+                    <i class="fa-solid fa-user"></i>
+                    <div>
+                        <h4> User123 </h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Mollitia molestias maxime itaque reiciendis, amet laudantium 
+                            vero dolores.
+                        </p>
+                    </div>
+                </div>
+                <div class="comentario">
+                    <i class="fa-solid fa-user"></i>
+                    <div>
+                        <h4> User123 </h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Mollitia molestias maxime itaque reiciendis, amet laudantium 
+                            vero dolores.
+                        </p>
+                    </div>
+                </div>
+                                <div class="comentario">
+                    <i class="fa-solid fa-user"></i>
+                    <div>
+                        <h4> User123 </h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Mollitia molestias maxime itaque reiciendis, amet laudantium 
+                            vero dolores.
+                        </p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="container-rodape">
+        <div>
+            <div class="rodape">
+                <a href="{% url 'home' %}">
+                    <img src='images/ezcar_logo_black_white.webp' alt="EZCAR">
+                </a>
+                <div>
+                    <p>
+                        O EZCar consiste em uma plataforma online que aproxima
+                        vendedores e compradores, pessoas físicas, por meio de
+                        um processo tecnológico inovador, automatizado e seguro,
+                        assistido por parceiros de negócios, para a compra e venda
+                        de veículos seminovos ou usados, verificados e vistoriados,
+                        sem intermediários, e com total transparência e segurança,
+                        sem contato entre as partes. 
+                    </p>
+                    <ul>
+                        <li>
+                            <a href=".container-motivos">
+                                Por que o EZCar?
+                            </a>
+                        </li>
+                        <li>
+                            <a href=".video1">
+                                Quero Vender
+                            </a>
+                        </li>
+                        <li>
+                            <a href=".video2">
+                                Quero Comprar
+                            </a>
+                        </li>
+                        <li>
+                            <a href=".container-duvidas">
+                                Perguntas Frequentes
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li>
+                            <a href="">
+                                Seja um EZCar Center
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Seja um Afiliado
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://ijavendi.com.br/carreiras/">
+                                Trabalhe Conosco
+                            </a>
+                        </li>
+                        <li style="max-width: 25rem;">
+                            <a href="">
+                                Cadastre-se para receber
+                                conteúdos, novidades ou
+                                ofertas
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="https://ijavendi.com.br/">
+                                Quem Somos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Termos e Condições de Uso
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Política de Privacidade
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <strong>
+                    Bom para quem compra.
+                </strong>
+                <strong>
+                    Bom para quem vende.
+                </strong>
+            </div>
+            <div class="rodape-imagens">
+                <a href="">
+                    <img src='images/facebook.webp' alt="">
+                </a>
+                <a href="">
+                    <img src='images/instagram.webp' alt="">
+                </a>
+                <a href="">
+                    <img src='images/google_play.webp' alt="">
+                </a>
+                <img src='images/letsencrypt.webp' alt="">
+            </div>
+            <div class="rodape-copyright">
+                <div>
+                    <p>
+                        Copyright © 2023 IJAVENDI. Todos os direitos reservados.
+                    </p>
+                    <p>
+                        Desenvolvido por <a href="https://ggaprogramer.com.br"> ggaprogramer.com.br </a>
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <a href="https://ijavendi.com.br">IJAVENDI SISTEMAS DIGITAIS LTDA.</a>, 
+                        inscrita no CNPJ sob no 27.137.446/0001-19, 
+                        com sede na 
+                        <a href="">
+                            Rua República do Iraque, 40 – Sala 1 Térreo, São José dos Campos/SP CEP: 12216-540
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src='js/index.js' defer></script>
+    <script src='js/post.js' defer></script>
+
+</body>
+</html>
+    
