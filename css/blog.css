@@ -294,6 +294,7 @@ header form input:focus{
     font-size: 1.9rem;
     color: var(--cor-secundaria);
     display: flex;
+    gap: 0.5rem;
     justify-content: center;
     align-items: center;
     font-family: var(--fonte-titulos);
