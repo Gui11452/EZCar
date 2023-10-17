@@ -97,7 +97,7 @@ body{
     padding: 1rem;
     width: 100%;
     position: fixed;
-    top: 9.8rem;
+    top: 9rem;
     right: 0;
     left: 0;
     font-size: 1.7rem;
@@ -190,7 +190,7 @@ div.cookies-desocultar{
 /* Cabecalho - Início */
 
 .cabecalho-invisivel{
-    min-height: 10rem;
+    min-height: 8rem;
 }
 
 .cabecalho, .cabecalho-mobile{
@@ -291,8 +291,17 @@ header form input:focus{
 
 .cabecalho>div>a, .cabecalho-mobile>div>a, .cabecalho-oculto>a{
     transition: .3s;
-    font-size: 3.5rem;
+    font-size: 1.9rem;
     color: var(--cor-secundaria);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--fonte-titulos);
+}
+
+.cabecalho-mobile>div>a p, .cabecalho-oculto>a p{
+    transform: translateY(0.35rem);
+    font-weight: none;
 }
 
 .cabecalho>div>a img, .cabecalho-mobile>div>a img, .cabecalho-oculto>a img{
@@ -849,7 +858,7 @@ header form input:focus{
 
 }
 
-@media (max-width: 532px){
+@media (max-width: 590px){
 
     .cabecalho-oculto form{
         display: block;
