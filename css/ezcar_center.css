@@ -94,7 +94,7 @@ body{
     text-align: center;
     color: var(--cor-branco);
     font-family: var(--fonte-paragrafos);
-    padding: 1rem;
+    padding: 1.5rem;
     width: 100%;
     position: fixed;
     top: 9rem;
@@ -190,7 +190,7 @@ div.cookies-desocultar{
 /* Cabecalho - Início */
 
 .cabecalho-invisivel{
-    min-height: 8rem;
+    min-height: 9rem;
 }
 
 .cabecalho, .cabecalho-mobile{
@@ -218,7 +218,7 @@ div.cookies-desocultar{
     gap: 1rem;
     z-index: 100000;
     transition: .3s;
-    transform: translateX(30rem);
+    transform: translateX(40rem);
 }
 
 .cabecalho-oculto>nav a{
@@ -242,37 +242,9 @@ div.cookies-desocultar{
     display: none;
 }
 
-.cabecalho-oculto form{
+/* .cabecalho-mobile{
     display: none;
-}
-
-header form{
-    position: relative;
-}
-
-header form input{
-    padding: 0.5rem 1.5rem;
-    border: 0.2rem solid var(--cor-secundaria);
-    border-radius: 1rem;
-    background: transparent;
-    transition: .3s;
-    font-size: 1.6rem;
-}
-
-header form label{
-    position: absolute;
-    top: 0.65rem;
-    right: 0.65rem;
-}
-
-header form i{
-    color: var(--cor-secundaria);
-    font-size: 2rem;
-}
-
-header form input:focus{
-    transform: scale(1.01);
-}
+} */
 
 .cabecalho>div, .cabecalho-mobile>div{
     width: 90%;
@@ -288,21 +260,23 @@ header form input:focus{
     align-items: center;
     gap: 3rem;
 }
-
 .cabecalho>div>a, .cabecalho-mobile>div>a, .cabecalho-oculto>a{
     transition: .3s;
     font-size: 1.9rem;
     color: var(--cor-secundaria);
     display: flex;
-    gap: 0.5rem;
     justify-content: center;
     align-items: center;
+    gap: 0.5rem;
     font-family: var(--fonte-titulos);
 }
 
-.cabecalho-mobile>div>a p, .cabecalho-oculto>a p{
+.cabecalho-mobile>div>a p{
     transform: translateY(0.35rem);
-    font-weight: none;
+}
+
+.cabecalho-oculto>a p{
+    transform: translateY(0.3rem);
 }
 
 .cabecalho>div>a img, .cabecalho-mobile>div>a img, .cabecalho-oculto>a img{
@@ -764,7 +738,7 @@ header form input:focus{
 
 }
 
-@media(max-width: 1135px){
+@media(max-width: 1005px){
     .cabecalho-mobile>div nav{
         display: none;
     }
