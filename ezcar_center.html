@@ -60,22 +60,9 @@
     <header class="cabecalho-mobile">
         <div>
             <a href="{% url 'home' %}">
-                <img src='images/logo_ezcar.webp' alt="EZCAR">
-                <p>
-                    Center
-                </p>
+                <img src='images/ezcar_center_logo.webp' alt="EZCAR">
             </a>
             <div>
-                <nav>
-                    <a href="">
-                        Seja um EZCar Center
-                        <span></span>
-                    </a>
-                    <a href="">
-                        Benefícios e Responsabilidades
-                        <span></span>
-                    </a>
-                </nav>
                 <div class="botao-mobile">
                     <span></span>
                     <span></span>
@@ -91,18 +78,35 @@
             <span></span>
         </div>
         <a href="{% url 'home' %}">
-            <img src='images/logo_ezcar.webp' alt="EZCAR">
-            <p>
-                Center
-            </p>
+            <img src='images/ezcar_center_logo.webp' alt="EZCAR">
         </a>
         <nav>
-            <a href="">
-                Seja um EZCar Center
+            <a href=".container-motivos">
+                Por que o EZCar?
                 <span></span>
             </a>
-            <a href="">
-                Benefícios e Responsabilidades
+            <a href=".container-ezcar">
+                Como Funciona
+                <span></span>
+            </a>
+            <a href=".video1">
+                Quero vender
+                <span></span>
+            </a>
+            <a href=".video2">
+                Quero comprar
+                <span></span>
+            </a>
+            <a href=".container-parceiros">
+                Parceiros
+                <span></span>
+            </a>
+            <a href=".container-duvidas">
+                Perguntas frequentes
+                <span></span>
+            </a>
+            <a href="https://ijavendi.com.br">
+                Quem somos
                 <span></span>
             </a>
         </nav>
@@ -128,20 +132,34 @@
                     enctype="multipart/form-data">
                         <input type="text" name="name" placeholder="Nome" required>
                         <input type="email" name="email" placeholder="E-mail" id="email-form" required>
-                        <input type="tel" name="celular" placeholder="Celular" required>
-                        <select name="area_interesse">
-                            <option disabled selected>Áreas de Interesse</option>
-                            <option value="Programador"> Programador </option>
-                            <option value="Web Designer"> Web Designer </option>
-                            <option value="Gestor de Tráfego"> Gestor de Tráfego </option>
-                            <option value="Analista de Negócio"> Analista de Negócio </option>
-                            <option value="Analista Financeiro"> Analista Financeiro </option>
-                            <option value="Outros"> Outros </option>
+                        <input type="tel" name="celular" placeholder="Celular/Whatsapp" required>
+                        <select name="cidade_interesse">
+                            <option disabled selected>Cidades de Interesse</option>
+                            <option value="São José dos Campos"> São José dos Campos </option>
+                            <option value="Taubaté"> Taubaté </option>
+                            <option value="Jacareí"> Jacareí </option>
                         </select>
-                        <textarea name="mensagem" cols="50" rows="8" placeholder="Envie uma mensagem..." required></textarea>
-                        <label for="curriculo">Copie e cole aqui seu currículo:</label>
-                        <input type="file" name="curriculo" id="curriculo">
-                        <input type="submit" id="form-botao" value="Enviar mensagem">
+                        
+
+                        <label for="pergunta">
+                            Já possui estacionamento coberto, com portão e controle de acesso?
+                        </label>
+                        <div class="input_pergunta">
+                            <div>
+                                <input type="radio" name="pergunta" id="pergunta"> Sim
+                            </div>
+                            <div>
+                                <input type="radio" name="pergunta" id="pergunta"> Não
+                            </div>
+                        </div>
+                        
+                        <label for="contrato_social">Copie e cole aqui o Contrato Social</label>
+                        <input type="file" name="contrato_social" id="contrato_social">
+
+                        <label for="fotos_estacionamento">Copie e cole aqui fotos do seu estacionamento (PDF com as fotos)</label>
+                        <input type="file" name="fotos_estacionamento" id="fotos_estacionamento">
+
+                        <input type="submit" id="form-botao" value="Enviar solicitação">
                     </form>
                 </div>
             </div>
@@ -271,7 +289,7 @@
         </div>
     </div>
 
-    <script src='js/index.js' defer></script>
+    <script src='js/ezcar_center.js' defer></script>
 
 </body>
 </html>

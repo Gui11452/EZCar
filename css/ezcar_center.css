@@ -515,6 +515,19 @@ div.cookies-desocultar{
     color: var(--cor-branco);
 }
 
+.input_pergunta{
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.input_pergunta>div{
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+}
+
 /* Container - Fim */
 
 
